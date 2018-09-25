@@ -1,6 +1,7 @@
-# docker-esa-snap
+# docker-esa-snap-with-python
 
-ESA Sentinel and SMOS Toolboxes preinstalled container for Earth Observation processing and analysis.
+ESA Sentinel and SMOS Toolboxes (SNAP 6.0.0) with Python 3.5 pre-installed container for Earth Observation processing and analysis.
+It contains the snappy Python module to invoke SNAP from Python.
 
 http://step.esa.int/main/
 
@@ -8,10 +9,10 @@ ESA is developing free open source toolboxes for the scientific exploitation of 
 
 Contains: SNAP, S1TBX, S2TBX, S3TBX, SMOS Box, PROBA-V Toolbox.
 
-Get it from https://hub.docker.com/r/mrmoor/esa-snap/
+Get it from https://hub.docker.com/r/mrmoor/esa-snap-with-python/
 
 
 Or get it via docker from the cmd:
 
-    docker pull mrmoor/esa-snap
+    docker pull mrmoor/esa-snap-with-python
   
