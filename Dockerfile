@@ -9,7 +9,7 @@ RUN python3 -m pip install --user --upgrade setuptools wheel
 # set JDK_HOME env
 RUN export JDK_HOME="/usr/lib/jvm/default-java"
 
-# build jpy module form source
+# build jpy module from source
 RUN cd /tmp/ && \
     git clone https://github.com/bcdev/jpy.git && \
     cd /tmp/jpy/ && \
@@ -23,8 +23,3 @@ RUN /usr/local/snap/bin/snappy-conf /usr/bin/python3
 RUN cd /root/.snap/snap-python/snappy/ && \
     python3 setup.py install
 RUN ln -s /root/.snap/snap-python/snappy /usr/lib/python3/dist-packages/snappy
-
-#test script kopieren
-COPY test.py /
-
-RUN chmod +x /test.py
